@@ -1,0 +1,79 @@
+
+package pkg202069040005;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+public class latihan2_jump {
+    public static void main(String[] args) {
+        Scanner id=new Scanner(System.in);
+        int A,B;
+        System.out.println("Menu Aplikasi Matematika");
+        System.out.println("AKHMAD ALDI (202069040005)");
+        System.out.println("========================================================================");
+        
+        while(true){
+        System.out.println("1. pertambahan (+)   2.pengurangan (-)   3. perkalian (*)   4.pembagian (/)  5. keluar Menu");
+        
+        String data_pilihan = JOptionPane.showInputDialog("Masukkan Menu Pilihan anda 1 - 5");
+        int pilihan = Integer.parseInt(data_pilihan);
+        switch(pilihan){
+            
+        case 1: {
+        System.out.println("------------------------------------------------------------------------");
+        System.out.print("Masukkan angka pertama : ");
+        A=id.nextInt();
+        System.out.print("Masukkan angka ke dua  : ");
+        B=id.nextInt();
+        int Pertambahan = A + B;
+        System.out.println(""+A+" + "+B+" = "+Pertambahan);
+        System.out.println("========================================================================");
+        break;
+        }
+        
+        case 2: { 
+        System.out.println("------------------------------------------------------------------------");
+        System.out.print("Masukkan angka pertama : ");
+        A=id.nextInt();
+        System.out.print("Masukkan angka ke dua  : ");
+        B=id.nextInt();
+        int Pengurangan = A - B;
+        System.out.println(""+A+" - "+B+" = "+Pengurangan);
+        System.out.println("========================================================================");
+        break;
+        }
+        
+        case 3: {
+        System.out.println("------------------------------------------------------------------------");
+        System.out.print("Masukkan angka pertama : ");
+        A=id.nextInt();
+        System.out.print("Masukkan angka ke dua  : ");
+        B=id.nextInt();
+        int kali = A * B;
+        System.out.println(""+A+" * "+B+" = "+kali);
+        System.out.println("========================================================================");
+        break;
+        }
+        
+        case 4: { 
+        System.out.println("------------------------------------------------------------------------");
+        System.out.print("Masukkan angka pertama : ");
+        A=id.nextInt();
+        System.out.print("Masukkan angka ke dua  : ");
+        B=id.nextInt();
+        int bagi = A / B;
+        System.out.println(""+A+" / "+B+" = "+bagi);
+        System.out.println("========================================================================");
+        break;
+        }
+        case 5:
+        System.out.println("------------------------------------------------------------------------");
+        System.out.println("TERIMA KASIH KARENA SUDAH MENCOBA DAN SAMPAI BERJUMPA KEMBALI DI APLIKASI INI");
+        return;
+            
+         }
+      
+        
+    }    
+
+    }
+}
